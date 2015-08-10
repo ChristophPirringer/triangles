@@ -13,4 +13,13 @@ describe('the triangles_path', {:type => :feature}) do
     expect(page).to have_content("6")
   end
 
+  it('searches the result page for the triangle-type') do
+    visit('/')
+    fill_in('a', :with => '5')
+    fill_in('b', :with => '5')
+    fill_in('c', :with => '7')
+    click_button('Tell Me!')
+    expect(page).to have_content("isosceles")
+  end
+
 end
