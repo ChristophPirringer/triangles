@@ -14,4 +14,13 @@ class Triangle
     end
   end
 
+  define_method(:what_triangle)do
+    sides=[].push(@a).push(@b).push(@c).sort()
+    if sides[1] == sides[2] && sides[0] == sides[1]
+      "equilateral"
+    else
+      "somethingelse"
+    end
+  end
+
 end
