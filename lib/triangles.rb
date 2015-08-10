@@ -20,8 +20,9 @@ class Triangle
       "equilateral"
     elsif sides[0]==sides[1] || sides[1]==sides[2] || sides[0]==sides[2]
       "isosceles"
+    elsif sides[0]!=sides[1] || sides[1]!=sides[2] || sides[0]!=sides[2]
+      "scalene"
     else
-      "somethingelse"
     end
   end
 

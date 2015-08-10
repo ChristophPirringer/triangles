@@ -25,6 +25,11 @@ describe(Triangle) do
       test_triangle = Triangle.new(5, 8, 5)
       expect(test_triangle.what_triangle()).to(eq("isosceles"))
     end
+
+    it("returns scalene if no sides are equal") do
+      test_triangle = Triangle.new(7, 8, 5)
+      expect(test_triangle.what_triangle()).to(eq("scalene"))
+    end
   end
 
 end
