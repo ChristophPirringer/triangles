@@ -9,6 +9,8 @@ class Triangle
     sides=[].push(@a).push(@b).push(@c).sort()
     if sides[2].>= sides[0].+sides[1]
       false
+    else
+      true
     end
   end
 
