@@ -18,6 +18,8 @@ class Triangle
     sides=[].push(@a).push(@b).push(@c).sort()
     if sides[1] == sides[2] && sides[0] == sides[1]
       "equilateral"
+    elsif sides[0]==sides[1] || sides[1]==sides[2] || sides[0]==sides[2]
+      "isosceles"
     else
       "somethingelse"
     end

@@ -20,6 +20,11 @@ describe(Triangle) do
       test_triangle = Triangle.new(5, 5, 5)
       expect(test_triangle.what_triangle()).to(eq("equilateral"))
     end
+
+    it("returns isosceles if two sides are equal") do
+      test_triangle = Triangle.new(5, 8, 5)
+      expect(test_triangle.what_triangle()).to(eq("isosceles"))
+    end
   end
 
 end
